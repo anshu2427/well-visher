@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href='/stylesheets/materialize.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="/javascripts/materialize.min.js"></script>    
+  </head>
+  <body>
+  	    {{> header}}
+
+    {{{body}}}
+   
+ <nav class="hide-on-med-and-down pushpin target" style="z-index:1000;">
+    <div class="nav-wrapper black">
+      <a href="/" class="brand-logo"><img src="/images/wvisher.png" style="height:64; padding-left:40;"><a href="/" class="brand-logo" style="margin-left:110; color:#df1e79;">Well Visher </a></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down" style="padding-right:100px;">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dance">Dance</a></li>
+        <li><a href="/social">Social</a></li>
+        <li><a href="/picture">Picture</a></li>
+        <li><a href="/contact-form">Contact</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+   
+           <script src="/javascripts/deleteDance.js"></script>
+            <script src="/javascripts/deleteSocial.js"></script>
+             <script src="/javascripts/deleteCover.js"></script>
+              <script src="/javascripts/deletePicture.js"></script>
+               <script src="/javascripts/deletePopular.js"></script>
+
+
+
+
+
+  </body>
+</html>

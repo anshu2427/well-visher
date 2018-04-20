@@ -1,0 +1,84 @@
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" href="/stylesheets/media.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+<script src="//cdn.sinch.com/latest/sinch.min.js"></script>
+</head>
+
+<body>
+  <div class="top1">
+    <h1 class="center-align  indigo-text text-darken-4 ">Video calling</h1>
+  </div>
+  
+  <div class="container">
+    <hr>
+  <div class="row">
+  <div class="clearfix"></div>
+  <div class="col l4 offset-l1">       
+    <div class="frame small">
+      <div class="inner loginBox" style="width: 255px;">
+        <h3 id="login">Sign in</h3>
+        <form id="userForm">
+          <input id="username" placeholder="USERNAME"><br>
+          <input id="password" type="password" placeholder="PASSWORD"><br>
+          <button id="loginUser" class="waves-effect waves-light btn purple">Login</button>
+          <button id="createUser" class="waves-effect waves-light btn  purple darken-4">Create</button>
+        </form>
+        <div id="userInfo" class="left-align blue-grey-text text-darken-4">
+          <h3><span id="username" class="blue-grey-text text-darken-4"></span></h3>
+          <button id="logOut" class="left-align waves-effect waves-light btn red accent-4">Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+    <div class="frame">
+    <div class="col l4 offset-l2">
+      <h3>Video Call</h3>
+      <div id="call">
+        <form id="newCall">
+          <input id="callUserName" placeholder="USERNAME (Caller User Id)" style="width: 255px;"><br>
+          <button id="call" class="waves-effect waves-light btn blue">Call</button>
+          <button id="hangup" class="waves-effect waves-light btn red">Hangup</button>
+          <button id="answer" class="waves-effect waves-light btn">Answer</button>
+          
+          <audio id="ringback" src='style/ringback.wav' loop></audio>
+          <audio id="ringtone" src='style/phone_ring.wav' loop></audio>
+        </form>
+      </div>
+    </div>
+      
+
+    
+      <div class="clearfix"><br></div>
+      <div class="col l6">
+        <video id="outgoing" autoplay muted></video>
+      </div>
+      <div class="col l6">
+        <video id="incoming" autoplay></video>
+      </div>
+      
+      
+
+
+      <div class="col l10 offset-l1">
+          <div id="callLog" class="blue-grey-text text-darken-4">
+          </div>
+
+          <div class="error red-text">
+          </div>
+      </div>
+
+   </div> 
+  </div>
+  </div>
+
+  <script src="/javascripts/VIDEOsample.js"></script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+
+
+

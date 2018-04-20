@@ -1,0 +1,26 @@
+<div class="container grey lighten-5" style="margin-bottom:400px;">
+	<div class="row">
+
+        <div class="col s12 m12 l12">
+        	<h2 class="center-align blue-grey-text text-darken-4">Picture Gallery</h2>
+        </div>
+          {{# each pictures}}
+		    <div class="col s12 m12 l4" style="margin-bottom:10px;">
+            <div class="hoverable z-depth-5 cyan lighten-5"> 
+                <img class="materialboxed" data-caption="{{this.picturedesc}}"  src="../{{this.pictureupload}}" style="width:100%; height:500px;"> 
+                    <div class="center-align cyan lighten-5">
+                        <h5 class="cyan-text text-darken-2" style="font-size:18px; padding-bottom:15px;">{{this.picturetitle}}</h5>
+                    </div>
+            </div>
+            </div>  
+          {{/each}}
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>

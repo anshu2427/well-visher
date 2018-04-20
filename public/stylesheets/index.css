@@ -1,0 +1,51 @@
+.banner-video {
+    background: black;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+#myVideo {
+  right: 0px;
+  width: 100%;
+}
+
+html, body, .block {
+  height: 100%;
+}
+
+// Class for when element is above threshold
+  .pin-top {
+    position: relative;
+    width: 100%;
+  }
+
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+    width: 100%;
+    
+  }
+
+  // Class for when element is pinned
+  .pinned {
+    position: fixed !important;
+    width: 100%;
+  }
+
+.sidebar {
+	margin-top: 60px; 
+	z-index: 1;
+	width: 300px;
+}
+
+.aftrcvr {
+	margin-top: 60px;
+}
+
+.card {
+	z-index: -1;
+}
+
+.carouVdo {
+    position: sticky;
+	z-index: -1;

@@ -1,0 +1,20 @@
+<div class="container grey lighten-5" style="margin-bottom:400px;">
+	<div class="row">
+        <div class="col l12">
+        	<h2 class="center-align blue-grey-text text-darken-4">Dance Create Happiness</h2>
+        </div>
+{{# each dances}}
+		<div class="col s12 l4">
+          <div class=" blue-grey darken-1" style="width:300px; margin-top:20px;">
+              <iframe width="300" height="169" src="{{this.dvideourl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="cczjn">
+              <h5 class="center-align" style="font-size:20px;"><a class="white-text" href="#">{{this.dvideotitle}}</a></h5>
+              <span><h6 class="center-align" style="padding:3px;"><a class="white-text" href="http://utei.in/">Created By {{this.dvideocreatedby}}</a></h6></span>
+            </div>
+          </div>
+        </div>
+{{/each}}
+       
+        
+	</div>
+</div>

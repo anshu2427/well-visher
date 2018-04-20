@@ -1,0 +1,96 @@
+<link rel='stylesheet' href='/stylesheets/index.css' />
+
+<nav>
+    <div class="navwrapper nav-wrapper black" style="height:90">
+      <a href="/" class="brand-logo"><img src="/images/wvisher.png" style="height:90; padding-left:90;"></a>
+    
+    <ul id="nav-mobile" class="right hide-on-med-and-down" style="padding-right:80px;">
+        <li><a href="sass.html"><img src="/images/badge.png" style="height:90; padding-left:90;"></a></li>
+      </ul>
+      </div>
+</nav>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.sidebar').pushpin({
+      top: 950,
+      button:1000,
+      offset: 0
+    });
+  });
+</script>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $('.pushpin').pushpin({
+     top:30
+    });
+    $('.pin-top').pushpin({
+      top:75
+    });
+
+    
+  });
+
+ $(document).ready(function(){
+      $('.carousel').carousel({
+            dist:0,
+            shift:0,
+            padding:20,
+            indicators:true,
+            numVisible:5
+
+      });
+
+
+
+    });
+
+
+
+
+/*CAROUSEL
+$(document).ready(function(){
+   $('.carousel').carousel({
+      numVisible:10,
+      fullWidth: true,
+      noWrap: true,
+     dist: 1,
+     indicators: true,
+     padding: 2,
+     duration: 10
+  });
+
+   $('#nextButton').click(function() {
+    $('.carousel').carousel('next');
+});
+
+    $('#prevButton').click(function() {
+    $('.carousel').carousel('prev');
+});
+   $('.carousel').carousel('instance.set(3);')
+    });
+ */
+
+
+
+
+
+
+
+</script>
+<!--
+  $('.pushpin-demo-nav').each(function() {
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
+    $this.pushpin({
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    });
+  });
+
+  -->

@@ -1,0 +1,177 @@
+<link rel='stylesheet' href='/stylesheets/index.css' />
+
+<div class="banner-video">
+		<video autoplay muted loop id="myVideo" poster="images/wvisher.png">
+        <source src="/videos/ankita.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <br>
+</div>
+  
+
+
+ 
+
+<div class="row">
+	<div class="col s12 m12 l12">
+		<h2 class="center-align blue-grey-text text-darken-3">Welcome to Well Visher</h2>
+		<hr>
+	</div>
+
+    <div class="hide-on-med-and-down col l3">
+        <div class="sidebar">
+            <ul class="collection">
+                <li class="collection-item" style="width: 100%;">
+                	<a href="/about">
+                	<div class="card" style="z-index:1 !important;">
+                        <div class="card-image">
+                          <img src="images/ankita24.jpg">
+                          <span class="card-title center-align" style="background-color:rgba(255,0,255,0.2); width:100%; height:22.8%;"><b>Ankita Gupta</b></span>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="collection-item">
+                  <a href="#Dance">
+                  <span class="title blue-grey-text"><h6 style="font-size:20px;">Dance Create Happiness</h6></span>
+                 </a>
+                </li>
+
+                <li class="collection-item">
+                  <a href="#Social">
+                  <span class="title blue-grey-text"><h6 style="font-size:20px;">Social Activities</h6></span>
+                 </a>
+                </li>
+
+                <li class="collection-item">
+                   <a href="#Picture">
+                  <span class="title blue-grey-text"><h6 style="font-size:20px;">Picture Gallery</h6></span>
+                 </a>
+                </li>
+
+                <li class="collection-item">
+                   <a href="#Media">
+                  <span class="title blue-grey-text"><h6 style="font-size:20px;">Media</h6></span>
+                 </a>
+                </li>
+
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="col s12 m12 l9">
+        <div class="row">
+            <div class="col l12">
+        	    <div class="aftrcvr">
+    	        	  <div class="row">
+                        <div class="col l12">
+                        	<h4 class="deep-purple-text text-lighten-1"><b>Most Popular Videos</b></h4>
+                        </div>
+                        {{# each populars}}
+                        <div class="col s12 l4">
+                          <div class=" blue-grey darken-1" style="width:300px; margin-top:20px;">
+                              <iframe width="300" height="169" src="{{this.pvideourl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="cczjn">
+                              <h5 class="center-align"><a class="white-text" href="#">{{this.pvideotitle}}</a></h5>
+                              <span><h6 class="center-align" style="padding:3px;"><a class="white-text" href="http://utei.in/">Created By {{this.pvideocreatedby}}</a></h6></span>
+                            </div>
+                          </div>
+                        </div>
+                        {{/each}}
+                  </div>
+    	        </div>
+            </div>
+        
+        <div id="Dance" class="col s12 m12 l12"><div class="hide-on-med-and-down"><br><br></div>	
+        	 <h3 class="red white-text" style="padding-left:30px; font-size:30;">Dance Create Happiness <span><h6 class="right-align" style="padding-left:48%; padding-right:0.2%; display:inline-block; font-size:24px;"><a href="/dance" class="white-text"> see more<i class="material-icons">navigate_next</i></a></h6></span></h3>
+            <div class="row">	
+              {{# each dances}}
+    	          <div class="col s12 l4">
+                   <div class=" blue-grey darken-1" style="width:300px; margin-top:20px;">
+                      <iframe width="300" height="169" src="{{this.dvideourl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="cczjn">
+                       <h5 class="center-align"><a class="white-text" href="#">{{this.dvideotitle}}</a></h5>
+                       <span><h6 class="center-align" style="padding:3px;"><a class="white-text" href="http://utei.in/">Created By {{this.dvideocreatedby}}</a></h6></span>
+                     </div>
+                   </div>
+                </div> 
+              {{/each}}  
+            </div>
+        </div>    
+        
+
+        <div id="Social" class="col s12 m12 l12"><div class="hide-on-med-and-down"><br><br></div>
+        	 <h3 class="red white-text" style="padding-left:30px; font-size:30;">Social Activities <span><h6 class="right-align" style="padding-left:61%; padding-right:0.2%; display:inline-block; font-size:24px;"><a href="/social" class="white-text"> see more<i class="material-icons">navigate_next</i></a></h6></span></h3>
+            <div class="row">	
+              {{# each socials }}
+    	          <div class="col s6 l3" style="margin-bottom:10px;">
+    	        	    <div class="hoverable z-depth-5 cyan lighten-5"> 
+                              <img class="responsive-img" data-caption="{{this.socialdesc}}"  src="../{{this.socialupload}}" style="width:100%; height:230px;">
+                              <div class="center-align cyan lighten-5">
+                                  <h5 class="cyan-text text-darken-2" style="font-size:18px; padding-bottom:15px;">{{this.socialtitle}}</h5>
+                              </div>
+  	                </div>
+                </div>
+              {{/each}}  
+            </div>
+        </div>
+
+        <div id="Picture" class="col s12 m12 l12"><div class="hide-on-med-and-down"><br><br></div>
+        	 <h3 class="red white-text" style="padding-left:30px; font-size:30;">Picture Gallery <span><h6 class="right-align" style="padding-left:62%; padding-right:0.2%; display:inline-block; font-size:24px;"><a href="/picture" class="white-text"> see more<i class="material-icons">navigate_next</i></a></h6></span></h3>
+            <div class="row">	
+             {{# each pictures}} 
+    	        <div class="col s6 l3" style="margin-bottom:10px;">
+    	        	<div class="hoverable z-depth-5 cyan lighten-5"> 
+                              <img class="responsive-img" data-caption="{{this.picturedesc}}"  src="../{{this.pictureupload}}" style="width:100%; height:230px;"> 
+                              <div class="center-align cyan lighten-5">
+                                  <h5 class="cyan-text text-darken-2" style="font-size:18px; padding-bottom:15px;">{{picturetitle}}</h5>
+                              </div>
+  	                </div>
+                </div>
+             {{/each}}
+            </div>
+        </div>
+
+        
+        <div id="Media" class="col s12 m12 l12"><div class="hide-on-med-and-down"><br><br></div>
+        	  <h3 class="red white-text" style="padding-left:30px; font-size:30;">Media <span><h6 class="right-align" style="padding-left:62%; padding-right:0.2%; display:inline-block; font-size:24px;"><a href="#Media" class="red-text"> see more<i class="material-icons">navigate_next</i></a></h6></span></h3>
+            <div class="row">
+            <!--	
+                <div class="col l6"> 
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoftwarereferral%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	            </div>
+            -->
+
+                <div class="col l5 offset-l1">
+	                <a class="twitter-timeline" data-width="340" data-height="500" data-theme="dark" href="https://twitter.com/TwitterMusic/timelines/393773266801659904?ref_src=twsrc%5Etfw">Music Superstars - Curated tweets by TwitterMusic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                </div>
+
+                <div class="col l6">
+	                <a class="twitter-timeline" data-width="340" data-height="500" data-theme="dark" href="https://twitter.com/TwitterMusic/timelines/393773266801659904?ref_src=twsrc%5Etfw">Music Superstars - Curated tweets by TwitterMusic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                </div>
+
+	        </div>
+	    </div>
+
+
+
+        </div>
+    </div>
+</div>
+<br>
+<p class="center-align blue-grey white-text darken-4">© copyright 2018 by Ankita Gupta | Powered By: Taffrii Technologies Pvt. Ltd.</p>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.sidebar').pushpin({
+      top: 950,
+      button:0,
+      offset: 0
+    });
+    $('.materialboxed').materialbox();
+  });
+</script>
+      
+  
