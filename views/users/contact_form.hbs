@@ -3,57 +3,48 @@
      <br><br>
      <h3 class="center-align purple darken-1 white-text" style="padding:10px;">Feel Freely, Just Contact Us Now!!</h3>
      <br>
-		 <form class="col s12 l8 offset-l2">
+		 <form action="/contact" method="post" class="col s12 l8 offset-l2">
       <div class="row">
         <div class="input-field col s12">
-          <input id="contact_name" type="text" class="validate">
-          <label for="contact_name">Full Name</label>
+          <input id="contactname" type="text" name="contactname" class="validate">
+          <label for="contactname">Full Name</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="contact_mobile" type="text" class="validate">
-          <label for="contact_mobile">Mobile Number</label>
+          <input id="contactmobile" type="text" name="contactmobile" class="validate">
+          <label for="contactmobile">Mobile Number</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12 ">
-          <input id="contact_email" type="email" class="validate">
-          <label for="contact_email">Email Id</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field cols12">
-          <input id="contact_location" type="text" class="validate">
-          <label for="contact_location">Location (Place)</label>
+          <input id="contactemail" type="text" name="contactemail" class="validate">
+          <label for="contactemail">Email Id</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="contact_purpose" type="text" class="validate">
-          <label for="contact_purpose">Purpose (Subject)</label>
+          <input id="contactlocation" type="text" name="contactlocation" class="validate">
+          <label for="contactlocation">Location (Place)</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="contact_message" type="text" class="validate">
-          <label for="contact_message">Feedback or Any Message</label>
+          <input id="contactpurpose" type="text" name="contactpurpose" class="validate">
+          <label for="contactpurpose">Purpose (Subject)</label>
         </div>
       </div>
-      <div class="file-field input-field">
-      <div class="btn">
-        <span>File</span>
-        <input type="file" multiple>
-      </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text" placeholder="Upload Any Attachment (optional)">
-      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="contactmessage" type="text" name="contactmessage" class="validate">
+          <label for="contactmessage">Feedback or Any Message</label>
+        </div>
       </div>
       <br>
       <div class="center-align">
-          <a class="waves-effect waves-light btn-large purple darken-1">Submit
+          <button type="submit" class="waves-effect waves-light btn-large purple darken-1">Submit
                 <i class="material-icons right">send</i>
-          </a>
+          </button>
       </div>
 
      </form>

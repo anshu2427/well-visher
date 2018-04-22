@@ -10,6 +10,8 @@ var Popular = require('../models/popular');
 var Dance = require('../models/dance');
 var Picture = require('../models/picture');
 var Social = require('../models/social');
+var Contact = require('../models/contact');
+
 
 //var User = mongoose.User;
 
@@ -98,24 +100,30 @@ router.get('/contact-form', function(req, res, next) {
   res.render('users/contact_form', { title: 'media' });
 });
 
+router.get('/blog', function(req, res, next) {
+  res.render('users/blog', { title: 'blog' });
+});
 
-/* admin post methods ADD COVER 
+
+/* admin post methods ADD COVER */
 
 
- router.post('/admin/addcover', upload.single('covervideoupload') , function(req, res, next){
+ router.post('/contact', function(req, res, next){
  	console.log("hello");
  	console.log(req.file);
 
 
- 	const covers = {
- 		covervideotitle: req.body.covervideotitle,
- 		covervideodescription: req.body.covervideodescription,
- 		covervideourl: req.body.covervideourl,
- 		covervideoupload: req.file.path
+ 	const contacts = {
+ 		contactname: req.body.contactname,
+ 		contactmobile: req.body.contactmobile,
+ 		contactemail: req.body.contactemail,
+    contactlocation: req.body.contactlocation,
+    contactpurpose: req.body.contactpurpose,
+    contactmessage: req.body.contactmessage
  	};
 
- 	req.checkBody('covervideotitle', 'Enter video title').notEmpty();
- 	req.checkBody('covervideourl', 'Enter video url').notEmpty();
+ 	req.checkBody('contactname', 'Enter your full name').notEmpty();
+ 	req.checkBody('contactmobile', 'Enter mobile no.').notEmpty();
 
  	var errors = req.validationErrors();
  	var messages = req.flash('error');
@@ -127,16 +135,16 @@ router.get('/contact-form', function(req, res, next) {
  			messages.push(error.msg);
  		});
 
- 		res.render('/admin/add_cover', {  messages: messages , hasErrors: messages.length > 0});
+ 		res.render('users/contact_form', {  messages: messages , hasErrors: messages.length > 0});
  		return;
  	}
 
- 	const cover1 = new Cover(covers);
- 	cover1.save(); 	
- 	res.redirect('/add-cover');  
+ 	const contact1 = new Contact(contacts);
+ 	contact1.save(); 	
+ 	res.redirect('/');  
 
  });
 
- */
+ 
 
 module.exports = router;
