@@ -56,10 +56,12 @@ html, body, .block {
  
 #socialClass {
   height: 280px;
+  widows: 100%;
 }
 
 #pictureId {
   height: 280px;
+  width: 100%;
 }
 
 }
@@ -68,10 +70,12 @@ html, body, .block {
  
 #socialClass {
   height: 40%;
+  width: 100%;
 }
 
 #pictureId {
   height: 40%;
+  width: 100%;
 }
 
 }
@@ -80,10 +84,12 @@ html, body, .block {
  
 #socialClass {
   height: 40%;
+  width: 100%;
 }
 
 #pictureId {
   height: 40%;
+  width: 100%;
 }
 
 }
