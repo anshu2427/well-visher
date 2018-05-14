@@ -59,7 +59,7 @@ router.get('/', function(req, res, next){
   .then(function(doc4){
      Dance.find()
  .then(function(doc5){
-    res.render('users/index', {socials: doc1, populars: doc2, pictures: doc3, covers: doc4, dances: doc5 , title: 'Well Visher'});
+    res.render('users/index', {socials: doc1, populars: doc2, pictures: doc3, covers: doc4, dances: doc5 , title: 'Ankita Vaibhav'});
   });
   });
   });
@@ -74,34 +74,34 @@ router.get('/', function(req, res, next){
 router.get('/dance', function(req, res, next) {
    Dance.find()
   .then(function(doc){
-  res.render('users/dance_create_happiness', {dances: doc, title: 'dance create happiness' });
+  res.render('users/dance_create_happiness', {dances: doc, title: 'Dance create happiness' });
 });
 });
 
 router.get('/picture', function(req, res, next) {
   Picture.find()
   .then(function(doc){
-  res.render('users/picture_gallery', { pictures: doc, title: 'picture uehiu' });
+  res.render('users/picture_gallery', { pictures: doc, title: 'Picture' });
   });
 });
 
 router.get('/social', function(req, res, next) {
   Social.find()
   .then(function(doc){
-  res.render('users/social_activities', { socials: doc, title: 'social' });
+  res.render('users/social_activities', { socials: doc, title: 'Social' });
 });
 });
 
 router.get('/media', function(req, res, next) {
-  res.render('users/media', { title: 'media' });
+  res.render('users/media', { title: 'Media' });
 });
 
 router.get('/contact-form', function(req, res, next) {
-  res.render('users/contact_form', { title: 'media' });
+  res.render('users/contact_form', { title: 'Contact Us' });
 });
 
 router.get('/blog', function(req, res, next) {
-  res.render('users/blog', { title: 'blog' });
+  res.render('users/blog', { title: 'Blog' });
 });
 
 
