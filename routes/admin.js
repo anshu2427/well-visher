@@ -128,12 +128,9 @@ router.get('/add-cover', function(req, res, next) {
 
  	const covers = {
  		coverphototitle: req.body.coverphototitle,
- 		coverphotourl: req.body.coverphotourl,
  		coverphotoupload: req.file.path
  	};
 
- 	req.checkBody('coverphototitle', 'Enter photo title').notEmpty();
- 	req.checkBody('coverphotourl', 'Enter photo title').notEmpty();
 
  	var errors = req.validationErrors();
  	var messages = req.flash('error');

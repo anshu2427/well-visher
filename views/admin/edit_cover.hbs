@@ -29,9 +29,8 @@
         <thead>
           <tr class="cyan">
               <th>Photo Title</th>
-              <th>Photo Subtitle</th>
               <th>Cover Image</th>
-              <th>Edit</th>
+             <!-- <th>Edit</th> -->
               <th>Delete</th>
           </tr>
         </thead>
@@ -40,9 +39,8 @@
        {{# each covers}}
           <tr>
             <td>{{this.coverphototitle}}</td>
-            <td>{{this.coverphotourl}}</td>
             <td><img class="first-slide" src="../{{this.coverphotoupload}}" alt="First slide"   width="100" height="51"></td>
-            <td><a class="waves-effect waves-light btn-small blue">Edit</a></td>
+         <!--   <td><a class="waves-effect waves-light btn-small blue">Edit</a></td> -->
             <td><a class="waves-effect waves-light btn-small red delete-cover" role="button" data-id={{this._id}}>Delete</a></td>
           </tr>
         {{/each}}  

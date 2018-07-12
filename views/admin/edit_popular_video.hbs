@@ -32,7 +32,7 @@
               <th>Video Url</th>
               <th>Video Created By</th>
               <th>Alt Image</th>
-              <th>Edit</th>
+             <!-- <th>Edit</th> -->
               <th>Delete</th>
           </tr>
         </thead>
@@ -44,7 +44,7 @@
             <td>{{this.pvideourl}}</td>
             <td>{{this.pvideocreatedby}}</td>
             <td><img class="first-slide" src="../{{this.pvideoupload}}" alt="First slide"   width="100" height="51"></td>
-            <td><a class="waves-effect waves-light btn-small blue">Edit</a></td>
+          <!--  <td><a class="waves-effect waves-light btn-small blue">Edit</a></td> -->
             <td><a class="waves-effect waves-light btn-small red delete-popular-video" role="button" data-id={{this._id}}>Delete</a></td>
           </tr>
           {{/each}}
