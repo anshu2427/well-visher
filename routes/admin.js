@@ -113,27 +113,27 @@ router.get('/add-popular-video', function(req, res, next) {
   res.render('admin/add_popular_video', { title: 'Express' });
 });
 
-
 router.get('/add-cover', function(req, res, next) {
-  res.render('admin/add_cover', { title: 'Add Cover 2' });
-});
+	res.render('admin/add_cover', { title: 'Add Cover' });
+  });
+
 
 
 // POST METHODS
 
- router.post('/add-cover', upload.single('covervideoupload') , function(req, res, next){
+ router.post('/add-cover', upload.single('coverphotoupload') , function(req, res, next){
  	console.log("hello");
  	console.log(req.file);
 
 
  	const covers = {
- 		covervideotitle: req.body.covervideotitle,
- 		covervideourl: req.body.covervideourl,
- 		covervideoupload: req.file.path
+ 		coverphototitle: req.body.coverphototitle,
+ 		coverphotourl: req.body.coverphotourl,
+ 		coverphotoupload: req.file.path
  	};
 
- 	req.checkBody('covervideotitle', 'Enter video title').notEmpty();
- 	req.checkBody('covervideourl', 'Enter video url').notEmpty();
+ 	req.checkBody('coverphototitle', 'Enter photo title').notEmpty();
+ 	req.checkBody('coverphotourl', 'Enter photo title').notEmpty();
 
  	var errors = req.validationErrors();
  	var messages = req.flash('error');

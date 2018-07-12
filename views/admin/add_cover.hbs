@@ -24,7 +24,7 @@
   </div>
   <div class="col s12 m12 l9">
     <br><br>
-    <h3 class="pink center-align white-text" style="padding-left:20px;">Add Cover Video </h3>
+    <h3 class="pink center-align white-text" style="padding-left:20px;">Add Cover Photo </h3>
     {{#if hasErrors}}
             <div>
                 {{# each messages }}
@@ -35,24 +35,24 @@
      <form action="/admin/add-cover" enctype="multipart/form-data" method="post" class="col s12 m12 l8 offset-l2">
       <div class="row">
         <div class="input-field col s12">
-          <input id="covervideotitle" type="text" name="covervideotitle" class="validate">
-          <label for="cover_video_title">Video Title</label>
+          <input id="coverphototitle" type="text" name="coverphototitle" class="validate">
+          <label for="cover_photo_title">Photo title line</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="covervideourl" type="text" name="covervideourl" class="validate">
-          <label for="covervideourl">Video URL</label>
+          <input id="coverphotourl" type="text" name="coverphotourl" class="validate">
+          <label for="coverphotourl">Photo subtitle line</label>
         </div>
       </div>
       
     <div class="file-field input-field">
       <div class="btn">
         <span>File</span>
-        <input type="file"  name="covervideoupload"  multiple>
+        <input type="file"  name="coverphotoupload">
       </div>
       <div class="file-path-wrapper">
-        <input class="file-path validate" name="covervideoupload" placeholder="Upload one or more files">
+        <input class="file-path validate" name="coverphotoupload" placeholder="Upload file in jpeg, jpg or png format">
       </div>
     </div>
 

@@ -1,41 +1,21 @@
 <link rel='stylesheet' href='/stylesheets/index.css' />
 <div class="dkijv">
-		<div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="images/dance.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/house.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/road.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/sky.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+
+<div class="carousel carousel-slider"  style="height: 750px;">
+   <div class="carousel-fixed-item center" style="margin-bottom: 120px;">
+    <a href="/admin" class="btn-floating btn-large cyan pulse"><i class="material-icons">arrow_downward</i></a>
+    </div>
+          {{# each covers}}
+    <div class="carousel-item red white-text">
+      <img src="../{{this.coverphotoupload}}" style="height: 750px;">    
+    </div>
+        {{/each}}
+</div>
+    
   <br>
 </div>
 
-
+<!--
 <div class="row">
 	<div class="col s12 m12 l12">
 		<h2 class="center-align blue-grey-text text-darken-3">Welcome to Ankita Vaibhav Media</h2>
@@ -159,34 +139,74 @@
              {{/each}}
             </div>
         </div>
+-->
 
-        
-        <div id="Media" class="col s12 m12 l12"><div class="hide-on-med-and-down"><br><br></div>
-        	  <h3 class="red white-text" style="padding-left:30px; font-size:30;">Media <span><h6 class="right-align" style="padding-left:62%; padding-right:0.2%; display:inline-block; font-size:24px;"><a href="#Media" class="red-text"> see more<i class="material-icons">navigate_next</i></a></h6></span></h3>
-            <div class="row">
-            <!--	
-                <div class="col l6"> 
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoftwarereferral%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-	            </div>
-            -->
-              <div class="col s10 offset-s1 m10 offset-m1 l5" style="margin-top:20px;">
-                <div class="fb-page" data-href="https://www.facebook.com/ankitavaibhavdotcom" data-tabs="timeline" data-height="520" data-width="360" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ankitavaibhavdotcom" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ankitavaibhavdotcom">Ankita Vaibhav</a></blockquote></div>
-              </div>
+<div class="row">
+  <div class="hide-on-med-and-down col s12 m12 l3" style="margin-top:7px; height:1200px;">
+     <div class="fb-page" data-href="https://www.facebook.com/ankitavaibhavdotcom" data-tabs="timeline" data-height="520" data-width="360" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ankitavaibhavdotcom" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ankitavaibhavdotcom">Ankita Vaibhav</a></blockquote></div>
+     <div class="fb-comments" data-href="https://www.facebook.com/ankitavaibhavdotcom/comments#configurator" data-width="360" data-numposts="3"></div>
+  </div>
+    <div class="col s12 m12 l5 ">
+      <div class="card hoverable">
+        <div class="card-image">
+          <a href="/dance">
+          <img class="dance" src="https://pre00.deviantart.net/429f/th/pre/f/2011/117/7/a/dance_wallpaper_by_djduzky-d3f0iez.jpg">
+         </a> <span class="card-title"></span>
+        </div>
+      </div>
+    </div>
+      <div class="col s12 m12 l4">
+        <div class="card hoverable">
+        <div class="card-image">
+        <a href="/picture">
+          <img class="picture" src="http://www.muriva.com/wp-content/uploads/2014/04/Mural-Wallpaper-Britain-in-Frames-Muriva-102533.jpg">
+        </a>
+        <!--  <span class="card-title"><h3 class="orange-text text-accent-4" style="font-weight: 800; font-size: 48px;">Pictures Gallery</h3></span>
+         -->
+        </div>
+      </div>
+    </div>
 
-                <div class="col s10 offset-s1 m10 l5" style="margin-top:20px;">
-	               <div class="fb-comments" data-href="https://www.facebook.com/ankitavaibhavdotcom/comments#configurator" data-width="500" data-numposts="3"></div>
-                </div>
+      <div class="col s12 m12 l4">
+        <div class="card hoverable">
+        <div class="card-image">
+        <a href="/social">
+          <img class="social" src="http://www.bedfordrow.ie/wp-content/uploads/2013/04/socialwork3.jpg">
+        </a>
+          <span class="card-title"></span>
+        </div>
+      </div>
+      </div>
 
-	        </div>
-	    </div>
+      <div class="col s12 m12 l3">
+        <div class="card hoverable">
+        <div class="card-image">
+        <a href="/blog">
+          <img class="blog" src="https://www.wallpaperup.com/uploads/wallpapers/2015/02/05/611574/042a2c1830e07563b4ea6bf0f9da73f8-700.jpg">
+        </a>
+          <span class="card-title"></span>
+        </div>
+      </div>
+      </div>
 
+      <div class="col s12 m12 l6">
+        <div class="card hoverable">
+        <div class="card-image">
+        <a href="/contact">
+          <img class="contact" src="https://static1.squarespace.com/static/53ab1d2fe4b0311d678d3c6c/t/53ab3126e4b0d615e22b988b/1403728168087/idg-wallpaper-contact-us.jpg?format=1500w">
+        </a>
+          <span class="card-title"></span>
+        </div>
+      </div>
+      </div>
+
+    </div>
 
 
         </div>
     </div>
 </div>
-<br>
-<p class="center-align blue-grey white-text darken-4" style="padding-bottom:7px; padding-top:7; font-size:22px;">© copyright 2018 by Well Visher | Powered By: Taffrii Technologies Pvt. Ltd.</p>
+
 
 
 
@@ -203,6 +223,9 @@
     $(document).ready(function(){
     $('.slider').slider();
   });
+
+   
+
         
 </script>
       

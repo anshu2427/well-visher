@@ -4,9 +4,9 @@ var Schema = mongoose.Schema;
 
 
 var coverSchema = new Schema({
-covervideotitle: {type: String, required: true},
-covervideourl: {type: String, required: true},
-covervideoupload: {type: String, required: false}
+coverphototitle: {type: String, required: true},
+coverphotourl: {type: String, required: true},
+coverphotoupload: {type: String, required: false}
 }, {collection:'coverCollection'});
 
 
